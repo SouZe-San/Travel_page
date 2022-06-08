@@ -1,0 +1,472 @@
+// =-============================ Font-styles Links =========================================
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@100;300;400;500&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+
+/* =================================== Defaults ============================================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    // font-family: 'Montserrat', sans-serif;
+
+    // font-family: 'Poppins', sans-serif;
+}
+
+// ================================@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@======================================
+
+.header {
+    display: flex;
+    margin: 0 1rem;
+    padding-top: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1#logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    color: white;
+    margin-left: 4vw;
+}
+
+span {
+    color: rgb(0, 250, 242);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+/*================================= NAV BAR ==================================*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0.5rem;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: transform 0.4s;
+
+}
+
+li a {
+    text-decoration: none;
+    // font-weight: bold;
+    color: white;
+}
+
+nav ul li:hover {
+    transform: scale(1.3);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.icons {
+    display: inline;
+    width: 7vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.icons i {
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+ /*===------------------- VIDEO BACKGROUND-------------------*/
+// .bg_video{
+//     height: 114vh;
+//     position: absolute;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+// overflow: hidden;
+// }
+
+
+/*================================ FACE SECTION ========================================*/
+header {
+    background: url(/Assets/PicBox/pexels-yeon-vaitia-12365792.jpg) no-repeat fixed;
+    background-size: cover;
+    min-height: 95vh;
+    // min-height: 114;  ---> video background 
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#black_screen {
+    background: rgba(51, 50, 50, 0.361) no-repeat;
+    background-size: cover;
+    min-height: 95vh;
+
+}
+
+.front_containt {
+    // text-align: center;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.front_containt h1#tagline {
+    font-weight: 400;
+    color: white;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+}
+
+.bokking {
+    width: 10vw;
+    height: 2.4rem;
+    margin-top: 2rem;
+    border-radius: 17px;
+    border: none;
+    // background: rgb(8, 79, 233);
+    background: linear-gradient(to right,blue, white);
+    color: white;
+    cursor: pointer;
+}
+
+.bokking:hover{
+    background: linear-gradient(to left, red,white);
+}
+
+/*=========================== 1st SECTION {WHY US SECTION} ================================*/
+
+.WhyUs {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 5vw;
+    height: 32vw;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    background: rgba(82, 81, 81, 0.119);
+}
+
+.upper {
+    text-align: center;
+}
+
+.WhyUs .upper h1.section1-head {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1vw;
+}
+
+.card {
+    margin: 10px;
+    //   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    transition: width 0.3s;
+    width: 20%;
+    height: 18vw;
+    transition: transform .4s;
+    padding-top: 1vw;
+
+}
+
+.card img {
+
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 35%;
+    position: relative;
+    left: 31%;
+}
+
+.container {
+    padding: 2rem 5px;
+    text-align: center;
+}
+
+.card .container h4 {
+    font-weight: 400;
+    color: black;
+}
+
+.first1 {
+    color: rgb(237, 11, 11);
+    font-size: 15px;
+}
+
+.card:hover {
+    /* width: 350px; */
+    box-shadow: 0 8px 16px 0 rgb(50, 49, 49);
+    transform: translateY(-3px);
+}
+
+// ================================= 2nd SECTION ==================================
+
+section.comeTo-Us {
+    display: flex;
+    flex-direction: row;
+    height: 35vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+div.image img {
+    width: 50vw;
+    height: 100%;
+}
+
+div#box {
+    margin-bottom: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.Text {
+    padding: 6vw 4vw;
+}
+
+.Text h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 2vw 0;
+    font-size: 2.2rem;
+}
+
+.Text button {
+    width: 10vw;
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    background: radial-gradient(white 0%, rgb(2, 210, 2) 90%);
+    cursor: pointer;
+}
+.Text button:hover{
+    background: radial-gradient(rgb(2, 210, 2) 0%, black 100%);
+    // color: #0cf6f2;
+    color: white;
+}
+// ==================================== Specification SECTION ================================
+section.Specification {
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    // background: rgba(38, 37, 37, 0.413);
+    background: radial-gradient(gray 0%, black 95%);
+}
+
+.Specification .box1,
+.box2 {
+    width: 50%;
+    flex-direction: row;
+    display: flex;
+    padding: 3vw 3vw;
+}
+
+.Specification .box1 div,
+.box2 div {
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.Specification .box1 div i,
+.box2 div i {
+    color: red;
+}
+
+.Specification .box1 div .num,
+.box2 div .num {
+    font-size: 2.2rem;
+}
+
+.Specification .box1 div .p,
+.box2 div .p {
+    font-size: 1rem;
+}
+
+// =============================================== ABOUT COMPANY ====================================
+
+section.about {
+    display: flex;
+    flex-direction: row;
+    height: 28vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    justify-content: space-between;
+}
+
+.option ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.option ul li {
+    margin: 0.5rem;
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: 400;
+}
+
+// [============================ Ourt Tours =====================================]
+
+
+section.tours {
+    display: flex;
+    flex-direction: column;
+}
+
+.tours .tourhead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 11vw;
+
+}
+
+.tours .galary {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 14vw;
+}
+
+.tours .galary .part1,
+.tours .galary .part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2vw;
+}
+
+.part1 img,
+.part2 img {
+    width: 28rem;
+    height: 17rem;
+}
+
+// ====================================================== CONTACT US ===============================================
+
+section.contact {
+    width: 100%;
+    height: 41vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(123, 122, 122, 0.395);
+}
+
+.floatCard {
+    background: white;
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floatCard h1 {
+    margin-top: 2vw;
+}
+
+.floatCard form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw;
+}
+
+.input input,
+textarea {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.input {
+    margin: 1vw;
+    display: inline-block;
+    border-radius: 27px;
+    width: 23vw;
+    text-align: left;
+    padding-left: 12px;
+    height: 6vh;
+    line-height: 6vh;
+    background: #b6afaf57;
+}
+
+.btn {
+    margin: 4vw 0.5rem;
+    padding: 3px;
+    border: none;
+    border-radius: 30px;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+    background: #47ffa9;
+    color: #0c1bf6;
+
+}
+
+.btn:hover {
+    opacity: 80%;
+    color: black;
+    font-weight: 800;
+}
+
+// ============================= FOOTER ==============================
+
+footer {
+    background: black;
+    color: white;
+    height: 23vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .above {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vw 5vw;
+}
+
+.above .b1, .b2 , .b3{
+    width: 28vw;
+    margin: 0 3vw;
+}
+.above p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.above .b2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .bottom {
+    background: rgb(88, 88, 87);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  padding: 1vw 5vw;
+}
