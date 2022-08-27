@@ -29,18 +29,27 @@
                 <!-- ========================== NAV-BAR SECTOIN ============================ -->
                 <nav>
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">SHOPS</a></li>
-                        <li><a href="#">BLOGS</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <div class="navi_option" id="navi-section">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">TEAM</a></li>
+                            <li><a href="#">SHOPS</a></li>
+                            <li><a href="#">BLOGS</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                            <i class="ri-menu-unfold-fill" id="close__btn"></i>
 
+                        </div>
+                        <div class="input">
+                            <input type="text" name="" id="search">
+                        </div>
                         <div class="icons">
-                            <i class="ri-notification-4-line"></i>
-                            <!-- <i class="ri-notification-4-fill"></i> fill     -->
                             <i class="ri-search-line"></i>
                             <!-- <i class="ri-search-fill"></i> -->
+                            <i class="ri-notification-4-line"></i>
+                            <!-- <i class="ri-notification-4-fill"></i> fill     -->
+
+                            <i class="ri-menu-fold-fill" id="menu__btn"></i>
+
                         </div>
                     </ul>
                 </nav>
@@ -67,34 +76,34 @@
             <div class="lower">
 
                 <div class="card">
-                    <img src="/Assets/PicBox/The Angry Birds Movie (4K UHD).jpg" alt="Avatar">
+                    <img class="card__img" src="/Assets/PicBox/Mountain Icon Simple Style.jpg" alt="Avatar">
                     <div class="container">
                         <h4>DIVERSE DESTINATION</h4>
-                        <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate?</p>
+                        <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="/Assets/PicBox/Diving Falcon.jpg" alt="Avatar">
+                    <img class="card__img" src="/Assets/PicBox/Diving Falcon.jpg" alt="Avatar">
                     <div class="container">
                         <h4>VALUE FOR MONEY</h4>
-                        <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate?</p>
+                        <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. sunt</p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="/Assets/PicBox/Mountain Icon Simple Style.jpg" alt="Avatar">
+                    <img class="card__img" src="/Assets/PicBox/Mountain Icon Simple Style.jpg" alt="Avatar">
                     <div class="container">
                         <h4>BEATIFULL PLACES</h4>
-                        <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate?</p>
+                        <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. sunt</p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="/Assets/PicBox/Diving Falcon.jpg" alt="Avatar">
+                    <img class="card__img" src="/Assets/PicBox/Diving Falcon.jpg" alt="Avatar">
                     <div class="container">
                         <h4>PASSIONSTE TRAVEL</h4>
-                        <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate?</p>
+                        <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt</p>
                     </div>
                 </div>
             </div>
@@ -216,7 +225,7 @@
             </div>
         </section>
     </main>
-
+    <!-- ----------=============================== FOOOTER PART -=================================================== -->
     <footer>
         <div class="above">
             <div class="b1">
@@ -225,7 +234,7 @@
                     provident voluptate earum.</p>
             </div>
             <div class="b2">
-                <div class="1">
+                <div class="t1">
                     <h3>CATAGORIES</h3>
                     <P>Audio Jungle</P>
                     <p>Code Canyon</p>
@@ -235,7 +244,7 @@
                     <p>Uncategorized</p>
                     <p>Video Hive</p>
                 </div>
-                <div class="1">
+                <div class="t1">
                     <h3>CATEGORIES</h3>
                     <P>Audio Jungle</P>
                     <p>Code Canyon</p>
@@ -267,6 +276,9 @@
             <p><i class="ri-copyright-line"></i> Copyright Undrscore Theme by creativeON</p>
         </div>
     </footer>
+
+    <script src="/logicScript/menuShow.js" defer></script>
+
 
 </body>
 
